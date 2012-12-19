@@ -1,0 +1,2 @@
+#curl -k --proxy http://proxy.entp.attws.com:8080 "https://api.att.com/oauth/token" -d @$1
+curl -k "https://api.att.com/oauth/token" -d @$1

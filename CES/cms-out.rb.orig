@@ -1,0 +1,6 @@
+message "Hello, World", {
+#  :to => "sip:mtv969@sip2sip.info",
+  :to => "+12069549666",
+  :callerID => "+19173830017",
+  :callerID => "+19173830017",
+  :network => 'SIP'}
