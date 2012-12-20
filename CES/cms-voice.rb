@@ -1,7 +1,8 @@
-ask "Hello, World. Who are you trying to reach?", {
-  :choices => "department(support, sales), person(david, mike)",
+ask "Hello, World. Say a number between one and ten?", {
+  :choices => "number(one, two, three, four, five, six, seven, eight, nine, ten)",
   :onChoice => lambda { |event|
-    say("You said" + event.choice.interpretation + ", which is a" + event.value)   
+    say("The " + event.value + " you chose is "
+     + event.choice.interpretation)   
   }
 }
 hangup
